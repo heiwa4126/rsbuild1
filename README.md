@@ -1,5 +1,7 @@
 # rsbuild1
 
+(2024-09) Rsbuild の練習。
+
 [Quick start - Rspack](https://rspack.dev/guide/start/quick-start#create-a-new-project)
 をちょっとやってみた。
 
@@ -36,8 +38,13 @@ Preview the production build locally:
 bun preview
 ```
 
-## 感想メモ
+## メモ
 
 - build するとデフォルトで minify する。良い。
 - license が別ファイルになる。良い。
-- index.html がどこから来るのかわからん。
+- index.html がどこから来るのかわからん。title を書き換えたいときはどうする?
+  - [HtmlRspackPlugin - Rspack](https://rspack.dev/plugins/rspack/html-rspack-plugin)を使うらしいのだが...
+  - ↑ 間違い。[Create React App - Rsbuild](https://rsbuild.dev/guide/migration/cra) にヒントがあった。
+- favicon は `curl https://assets.rspack.dev/rspack/favicon-128x128.png -LO` で本家から持ってきた。Rsbuild の方がよかったかも。
+- ロゴ画像も ↑ と同様。
+- build するときの chunks の管理は? <https://rspack.dev/config/optimization>見るとそこそこデフォルト値でいい感じ。
