@@ -48,3 +48,4 @@ bun preview
 - favicon は `curl https://assets.rspack.dev/rspack/favicon-128x128.png -LO` で本家から持ってきた。Rsbuild の方がよかったかも。
 - ロゴ画像も ↑ と同様。
 - build するときの chunks の管理は? <https://rspack.dev/config/optimization>見るとそこそこデフォルト値でいい感じ。
+- TODO: GitHub Pages
